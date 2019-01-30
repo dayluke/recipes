@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luke's Recipe Book</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A personalised recipe book to visualise delicious food options for every day.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Luke Day">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main_style.css" rel="stylesheet" type="text/css">
+    <script src="main_script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--Hero and Header-->
+    <div id="hero-text">Luke & Lea's Recipe Book</div>
+    <hr width=50%>
+
+    <!--Recipes-->
+    <div id="breakfast" class="recipes">
+
+        <p>Breakfast</p>
+
+        <div class="card-container">
+
+            <div class="card" id="toast">
+
+                <div class="splash" style="background-image: url(https://cdn.pixabay.com/photo/2015/12/05/09/19/toast-1077881_960_720.jpg);"></div>
+                <h1 class="breakfast"><a href="https://www.deliaonline.com/recipes/type-of-dish/bread-recipes/perfect-toast" target="_blank">Toast</a></h1>
+                <h2><i class="fas fa-clock"></i> 5 mins</h2>
+                <div class="desc">Toast. Quick to make. Easy to do. Tasty to eat. Simplicity and variety come hand-in-hand with toast, due to the vast amount of spreads and jams.</div>
+                <button onclick="anim(this, 'toast')">Open</button>
+
+            </div>
+
+            <div class="card" id="pancakes">
+
+                <div class="splash" style="background-image: url(https://images-gmi-pmc.edge-generalmills.com/edfaaf9f-9bde-426a-8d67-3284e9e496ae.jpg);"></div>
+                <h1 class="breakfast"><a href="https://tasty.co/recipe/tasty-101-buttermilk-pancakes" target="_blank">Pancakes</a></h1>
+                <h2><i class="fas fa-clock"></i> 45 mins</h2>
+                <div class="desc">Pancakes are one of the most delicious breakfast meals. Luke and Leanne love theirs lathered in maple syrup, and butter if you're feeling devilish. And, we've found the perfect recipe to make the fluffiest pancakes - thanks to Tasty©.</div>
+                <button onclick="anim(this, 'pancakes')">Open</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr width=50%>
+
+    <div id="lunch" class="recipes">
+
+        <p>Lunch</p>
+
+        <div class="card-container">
+            
+            <div class="card" id="gammon">
+
+                <div class="splash" style="background-image: url(https://d1doqjmisr497k.cloudfront.net/-/media/schwartz/recipes/xmas2018/glazed_gammon_800x800.ashx?vd=20181107T152552Z&hash=9F0F5462B7A3FD57EA2E43B1D1AAC6FC891A562F);"></div>
+                <h1 class="lunch"><a href="https://www.bbc.com/food/recipes/traditional_honey-glazed_52289" target="_blank">Gammon</a></h1>
+                <h2><i class="fas fa-clock"></i> 2 hours</h2>
+                <div class="desc">We love our Gammon roasted and glazed in honey! Sweet and juicy and oh so scrumptious! :D</div>
+                <button onclick="anim(this, 'gammon')">Open</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <hr width=50%>
+
+    <div id="dinner" class="recipes">
+
+        <p>Dinner</p>
+
+        <div class="card-container">
+
+            <div class="card" id="pasta">
+
+                <div class="splash" style="background-image: url(https://d3cizcpymoenau.cloudfront.net/images/legacy/37655/SFS_spaghetti_carbonara_CLR-3.jpg);"></div>
+                <h1 class="dinner"><a href="https://www.bbcgoodfood.com/recipes/1052/ultimate-spaghetti-carbonara" target="_blank">Pasta</a></h1>
+                <h2><i class="fas fa-clock"></i> 10 minutes</h2>
+                <div class="desc">Pasta has always been a favourite of Luke and Leanne's. Its potential for variety is endless. From having it plain, to overloading it with chorizo, to having a gorgeous carbonara - anything works brilliantly with pasta.</div>
+                <button onclick="anim(this, 'pasta')">Open</button>
+
+            </div>
+
+            <div class="card" id="risotto">
+
+                <div class="splash" style="background-image: url(http://www.fiverfeeds.co.uk/wp-content/uploads/2014/12/28101588_ml.jpg);"></div>
+                <h1 class="dinner"><a href="https://www.bbcgoodfood.com/recipes/2431643/chicken-and-chorizo-risotto" target="_blank">Risotto</a></h1>
+                <h2><i class="fas fa-clock"></i> 45 minutes</h2>
+                <div class="desc">Risotto is another one and Luke and Leanne's staples. The creamy rice with spicy hits of chorizo is one of their favourite meals for a cozy night in.</div>
+                <button onclick="anim(this, 'risotto')">Open</button>
+
+            </div>
+
+            <div class="card" id="chicken_goujon">
+
+                <div class="splash" style="background-image: url(https://realfood.tesco.com/media/images/Chicken-goujons-with-homemade-ketchup--HERO-9eab9fa4-2c76-4491-9740-88b191943794-0-472x310.jpg);"></div>
+                <h1 class="dinner"><a href="https://www.bbc.com/food/recipes/chickengoujons_82608" target="_blank">Chicken Goujons</a></h1>
+                <h2><i class="fas fa-clock"></i> 30 mins</h2>
+                <div class="desc">Golden crispy chicken fillets go perfectly with either fries or inside of a wrap! We love ours both ways</div>
+                <button onclick="anim(this, 'chicken_goujon')">Open</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr width=50%>
+
+    <div id="snacks" class="recipes">
+
+        <p>Snacks</p>
+
+        <div class="card-container">
+
+        </div>
+
+    </div>
+
+    <hr width=50%>
+
+    <div id="wrapper">
+        <select id="select_menu">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="snack">Snack</option>
+        </select>
+        <button id="random" onclick="randomFood()">Random</button>
+        <p id="chosenFood"></p>
+    </div>
+
+    <div style="width: 100%; height: auto; margin-bottom: 200px;"></div>
+
+    <!-- To Do List:
+        Tasks:
+            
+        Recipes:
+            Cookies
+            Gnocchi
+            Ramen Carbonara
+            Spanish Style Rice
+            Millionaire's Shortbread
+    -->
+
+</body>
+</html>
