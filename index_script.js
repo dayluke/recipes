@@ -1,5 +1,5 @@
 function verifyUser(user, pword) {
-  var newUrl = window.location.pathname.replace('index.html','main.html');
+  var newUrl = window.location.pathname.replace('recipes/','recipes/main');
   if (user == "admin" && pword == "password") {
     window.location = newUrl;
   } else {
